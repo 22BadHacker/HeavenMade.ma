@@ -1,0 +1,700 @@
+.container2{
+    overflow: hidden;
+    height: 120dvh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    background: #1e2029;
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(fonts/Light\ Stories.otf);
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans_Condensed-Bold.ttf);
+}
+@font-face {
+    font-family: 'JosefinSans';
+    src: url(fonts/JosefinSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Jersey';
+    src: url(fonts/Jersey25-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppin';
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Lofi';
+    src: url(fonts/LofilifestyleRegular-K7Kz7.otf);
+}
+@font-face {
+    font-family: 'Close';
+    src: url(fonts/Undisclose-qZLAr.ttf);
+}
+
+/* design the clock */
+.heroo{
+    margin-top: 50px;
+}
+
+.heroo p{
+    font-family: 'Lofi';
+    font-size: 19px;
+    padding: 7px 0;
+    color: #fff;
+}
+
+.heroo p span{
+    font-family: 'Close';
+    color: darkorange;
+}
+
+.heroo .box{
+    background: transparent;
+    /* box-shadow: 5px 0px 10px grey, -5px 0px 10px grey; */
+    text-align: center;
+    padding: 20px 40px;
+    /* width: fit-content;
+    height: fit-content; */
+    border-radius: 8px;
+    /* scale: 1.5; */
+}
+
+.heroo .box .clock{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.heroo .box .clock span{
+    font-size: 30px;
+    letter-spacing: 8px;
+    font-family: 'Poppins';
+    color: blanchedalmond;
+    
+}
+
+.heroo .box .clock .hrs{
+    position: relative;
+    rotate: -5deg;
+}
+
+.heroo .box .clock #min{
+    rotate: 0deg;
+}
+.heroo .box .clock #sec{
+    rotate: 5deg;
+}
+.heroo .box .clock span .hrs::before{
+    position: absolute;
+    content: "Hrs";
+    font-size: 10px;
+    top: 0px;
+    left: 5px;
+    color: black;
+}
+
+
+
+/* second Chapter */
+.informitain{
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+.main{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* gap: 50px; */
+    position: relative;
+    padding: 15px 0;
+    border: .5px solid grey;
+    box-shadow: 0 0 12px ghostwhite;
+}
+
+.active-bg{
+    /* display: none; */
+    position: absolute;
+    padding: 10px;
+    height: 100%;
+    height: 100%;
+    bottom: 0;
+    left: -40px;
+    background: transparent;
+    box-shadow: 0 0 10px grey;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.tab-btn{
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+main .tab-btn:hover{
+    filter: drop-shadow(0 0 10px ghostwhite);
+}
+.tab-btn.active{
+    color: #7360ff;
+    transition: all .3s;
+    
+}
+
+.content-box .content{
+    display: none;
+
+    animation: moving .7s ease;
+}
+
+@keyframes moving{
+    from{translate: 70px 0; opacity: 0;}
+    to{translate: 0 0; opacity: 1;}
+}
+.content-box .content.active{
+    display: block;
+}
+
+
+.content-box{
+    margin-top: 40px;
+}
+
+.content-box .content .logos a{
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.content-box .content .logos{
+    padding-bottom: 10px;
+}
+
+.content-box .content .textt{
+    color: #e3e3e3;
+    font-family: 'Poppin';
+    font-size: 14px;
+}
+.content-box .content .voted{
+    color: gold;
+    padding-top: 40px;
+}
+.content-box .content .voted span{
+    color: blanchedalmond;
+    font-family: 'Poppins';
+    font-size: 17px;
+}
+
+
+.pro h4{
+    color: #e3e3e3;
+    font-family: 'Poppin';
+    padding-top: 80px;
+    font-size: 15px;
+    rotate: 4deg;
+}
+
+.pro{
+   margin-bottom: 20px;
+}
+
+.pro .charts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    /* scale: .9; */
+    
+
+}
+
+.charts .chart{
+    width: 300px;
+    height: 35px;
+    background: #fff;
+    font-family: 'Poppin';
+    /* border-radius: 5px 5px 0 0; */
+    border-radius: 20px;
+    padding-top: 5px;
+    position: relative;
+    box-shadow: 0 0 10px #fff;
+    rotate: 4deg;
+    transition: all ease;
+    
+    /* animation: root linear infinite 2s; */
+}
+
+@keyframes root{
+    0%{
+        rotate: 0;
+    }
+    25%{
+        rotate: 7deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -7deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+.charts .chart::after{
+    position: absolute;
+    content: url(icons/check-solid.svg);
+    rotate: -2deg;
+    top: 2px;
+    /* background: cyan; */
+    border-radius: 50%;
+    padding: 5px;
+    width: 13px;
+    height: 13px;
+    margin-left: 2px;
+    /* left: 2px; */
+}
+
+.charts .c-1{
+    width: 80%;
+    font-size: 15.5px;
+}
+.charts .c-2{
+    width: 70%;
+    font-size: 15px;
+}
+.charts .c-3{
+    width: 55%;
+    font-size: 14.5px;
+}
+.charts .c-4{
+    width: 45%;
+    font-size: 14px;
+}
+.charts .c-5{
+    width: 37%;
+    font-size: 13.5px;
+}
+.charts .c-6{
+    width: 27%;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/* club */
+
+.info h6{
+    padding-top: 4px;
+    font-family: 'Light';
+    color: ghostwhite;
+    font-size: 14px;
+}
+/* Team */
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #f2f2f2; */
+}
+
+.body .tour{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: 50px;
+    background: transparent;
+    /* box-shadow: 0 10px 20px #676767; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tour table{
+    text-align: justify;
+    width: 100%;
+    margin: 10px 0px 10px 30px;
+    border-collapse: collapse;
+    /* border: 1px solid #fff; */
+    
+}
+
+table .head td{
+    position: relative;
+    font-size: 16px;
+    color: cyan;
+    font-family: 'JosefinSans',sans-serif;
+    padding: 15px 20px;
+  
+}
+
+table tr td{
+    color: grey;
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Light',sans-serif;
+    
+}
+
+table tr .imee{
+    font-family: 'Lofi',sans-serif;
+    padding-bottom: 20px;
+}
+
+table tr td .avatar{
+    position: relative;
+    width: 36px;
+    left: -6px;
+    top: 8px;
+    border: 1px solid;
+    border-image: linear-gradient(skyblue,lightgreen);
+    /* border-image: skyblue; */
+    
+}
+
+table tr td:hover{
+    background: rgba(0, 0, 0, .2);
+    
+    scale: 1.1;
+    border-radius: 20px;
+    transition: .5s all  ease;
+    cursor: pointer;
+    color: #8bbae9;
+    text-shadow: 0 0 0 transparent;
+}
+table tr td .avatar:hover{
+    scale: 1.2;
+}
+
+table tr .act{
+    text-shadow: 0 0 10px green, 0 0 40px green;
+}
+table tr .break{
+    text-shadow: 0 0 10px lightsalmon, 0 0 40px lightsalmon;
+}
+table tr .vic{
+    text-shadow: 0 0 10px lightblue, 0 0 40px lightblue;
+}
+
+
+
+table tr td .ava{
+    border-radius: 50%;
+}
+table tr td .ava1{
+    border-radius: 50%;
+    background: linear-gradient(#8bbae9, lightgreen);
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+table tr td .mo{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* table tr .imee::before{
+    content: url(avatar/avatar-ali.png);
+    position: absolute;
+    width: 10px;
+    border-radius: 50%;
+} */
+
+
+table caption{
+    padding-bottom: 30px;
+    position: relative;
+}
+
+table caption p span{
+    filter: drop-shadow(0 0 10px #fff);
+    font-family: 'Light',sans-serif;
+    font-size: 11px;
+    text-align: left;
+}
+
+table caption .linee{
+    height: .5px;
+    width: 70%;
+    background: grey;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    translate: -50% 0;
+    border-radius: 20%;
+    filter: blur(.8px);
+}
+
+
+
+
+/* Activity */
+
+.body2{
+
+    display: grid;
+    
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+}
+.body2 .act{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 50%;
+    translate: -50%;
+    color: hotpink;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 19px;
+    filter: drop-shadow(0 0 20px hotpink);
+    cursor: pointer;
+    animation: toot linear infinite 4s;
+}
+@keyframes toot{
+    0%{
+        filter: drop-shadow(0 0 20px hotpink);
+        color: hotpink;
+
+    }
+    50%{
+        color: ghostwhite;
+        filter: drop-shadow(0 0 20px ghostwhite);
+        scale: 1.1;
+        /* translate: 0px 10px; */
+        
+    }
+    100%{
+        filter: drop-shadow(0 0 20px hotpink);
+        color: hotpink; 
+    }
+}
+
+.wrapper{
+    height: 360px;
+    width: 280px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+}
+
+.body2 .con{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    top: -15%;
+    /* left: 50%; */
+    /* translate: -50%; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* place-items: center; */
+    margin-right: 5px;
+    /* scale: .9; */
+}
+.wrapper .card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    padding: 5px;
+    transform-style: preserve-3d;
+    transition: 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.wrapper:hover > .front-face{
+    transform: rotateX(0deg);
+    opacity: 90%;
+    filter: blur(15px);
+    cursor: pointer;
+    opacity: .5;
+}
+
+.wrapper:hover > .ffce{
+    transform: rotateX(0deg);
+    opacity: 90%;
+    filter: blur(15px);
+}
+
+.wrapper .bfc{
+    /* transform: rotateX(0deg); */
+    display: none;
+    opacity: 0;
+}
+.wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.wrapper .front-face .slide{
+    object-fit: cover;
+}
+
+.wrapper .back-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0%;
+    transform: rotateY(-90deg);
+    box-shadow: 0 0 10px grey;
+
+}
+
+.wrapper:hover > .bfc{
+    /* transform: rotateX(0deg); */
+    opacity: 1;
+    display: flex;
+}
+
+.wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+    box-shadow: 0 0 10px grey;
+    background-color: transparent;
+}
+.wrapper .back-face img{
+    height: 100px;
+    margin-bottom: 25px;
+    width: 100px;
+    border-radius: 50%; 
+    padding: 5px; 
+    background: linear-gradient(360deg, #1cc7d0, #2ede98);
+    position: relative;
+
+}
+
+.back-face .twin::after{
+    position: absolute;
+    content: url(activity-img/belle-femme-femme-se-mordant-levre-expression-du-visage-sentiments-attitude_176420-15189.avif);
+    height: 100px;
+    top: 0;
+    left: 10px;
+    /* margin-bottom: 25px; */
+    width: 100px;
+    border-radius: 50%; 
+    padding: 5px; 
+    background: linear-gradient(360deg, #1cc7d0, #2ede98);
+}
+.wrapper .back-face .info{
+    text-align: center;
+    padding-bottom: 0px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    /* padding-bottom: 20px; */
+    font-family: 'Poppin';
+    color: beige;
+
+}
+
+.info p{
+    font-family: 'Opensans';
+    color: gray;
+    padding: 0px 0 8px  0;
+    position: relative;
+    top: -9px;
+    font-size: 13px;
+}
+.info p span{
+    font-family: 'light';
+    color: ghostwhite;
+    font-size: 17px;
+    text-shadow: 0 0 10px ghostwhite, 0 0 20px ghostwhite;
+}
+.info h4{
+    font-family: 'Lofi';
+    color: gold;
+    font-size: 15px;
+    /* text-shadow: 0 0 10px ghostwhite; */
+
+}
+
+.here{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    translate: -50%;
+    color: hotpink;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 19px;
+    filter: drop-shadow(0 0 20px hotpink);
+    background: transparent;
+    box-shadow: 0 0 10px hotpink;
+    padding: 10px 10px; 
+    border-radius: 20px;
+    width: fit-content;
+    cursor: pointer;
+   text-wrap: wrap;
+}
+
+.here:hover{
+    box-shadow: 0 0 20px #fff;
+    transition: all .2s ease;
+    color: #fff;
+    scale: 1.1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

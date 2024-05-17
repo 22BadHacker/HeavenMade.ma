@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 60%, 98%);
+    background-image: url(images/self-care-social-media-post-spa-sauna-health-wellness-illustration_732449-6672.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    width: fit-content;
+    padding: 30px;
+    /* align-items: center;
+    justify-content: baseline; */
+    border: 2px solid yellow;
+    border-radius: 12px;
+    padding: 20px 20px;
+    background: transparent;
+    box-shadow: 0 0 20px 3px grey;
+    gap: 15px;
+    animation: border linear infinite 3s;
+    transition: .1s;
+}
+
+@keyframes border{
+    10%{
+        border: 1px solid orange;
+        /* transition: 2s; */
+    }
+    25%{
+        border: 1px solid orange;
+        /* transition: 3s; */
+    }
+    50%{
+        border: 1px solid rgb(0, 255, 179);
+        /* transition: 3s; */
+    }
+    75%{
+        border: 1px solid rgb(0, 174, 255);
+        /* transition: 4s; */
+    }
+    100%{
+        border: 1px solid yellow;
+        /* transition: 5s; */
+    }
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+
+/* first chapter */
+.head{
+    display: flex;
+    gap: 325px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.head .logo{
+    position: absolute;
+    left: 54%;
+    translate: -50% 0;
+    top: 15%;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+    color: #f4a896;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+}
+
+.head .logo:hover{
+    scale: 1.2;
+    rotate: -1deg;
+    transition: all .1s;
+    color: #f09;
+}
+
+.head .logo::after{
+    content: url(img/cannabis-solid.svg);
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    width: 11px;
+    rotate: 45deg;
+}
+
+
+.head a{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    /* color: hsla(211, 68%, 94%, .4); */
+}
+
+.head .read{
+    padding-top: 12px;
+    color: hsla(224, 21%, 14%, .6);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes color{
+    0%{
+        color: turquoise;
+    }
+    15%{
+        color: rgb(165, 98, 146);
+    }
+    30%{
+        color: rgb(197, 110, 82);
+    }
+    45%{
+        color: rgb(215, 93, 175);
+    }
+    60%{
+        color: rgb(95, 97, 224);
+    }
+    60%{
+        color: rgb(197, 218, 77);
+    }
+    75%{
+        color: turquoise;
+    }
+    100%{
+        color: hsl(224, 21%, 14%);
+    }
+}
+
+.head h1{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: hsl(224, 21%, 14%);
+    animation: color linear infinite 5s;
+    /* transition: 5s; */
+}
+
+.head .num{
+    font-size: 16px;
+    margin-left: 8px;
+    padding: 1px 8px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: hsl(219, 94%, 27%);
+}
+
+/* The massage */
+
+.mark{
+    display: flex;
+    background: hsla(211, 68%, 94%, .5);
+    padding: 15px 15px;
+    border-radius: 10px;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mark img{
+    width: 47px;
+    padding-right: 11px;
+}
+
+.mark h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    font-size: 13px;
+    color: hsl(224, 21%, 14%);
+}
+
+.mark h3:hover, .mark h5:hover, .mark h5 a:hover, .head .read:hover{
+    color: hsl(219, 85%, 26%);
+    transition: .1s;
+}
+
+.mark h3 a{
+    font-weight: 400;
+    font-size: 12px;
+    color: hsl(219, 14%, 63%);
+}
+
+.mark h5 {
+    color: hsl(219, 12%, 42%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    position: relative;
+    padding-top: 2px;
+}
+.mark .chess{
+    font-weight: 850;
+    color: hsl(219, 85%, 26%);
+}
+
+.mark h5 .point{
+    background-color: hsl(1, 90%, 64%);
+    font-size: 25px;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border-radius: 50%;
+    right: -13px;
+    top: 7px;
+}
+
+.mark h5 .point-2{
+    background-color: green;
+}
+
+.mark .ago{
+    position: absolute;
+    bottom: 15px;
+    left: 67px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: hsl(204, 50%, 76%);
+}
+
+.mark-1, .mark-2{
+    background: transparent;
+    position: relative;
+}
+
+.mark-2{
+    margin-bottom: 100px;
+    background: hsla(211, 68%, 94%, .5);
+}
+.mark-2 .text{
+    /* display: flex;
+    flex-direction: row; */
+    position: absolute;
+    top: 70px;
+    left: 68px;
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 15px 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+/* some effect */
+.mark-2 .text:hover, .mark-1:hover/*, .head .read:hover*/{
+    background-color: hsla(211, 68%, 94%, .9);
+    transition: .1s;
+    cursor: pointer;
+}
+.mark-2 .text:hover{
+    scale: 1.1;
+    transition: .2s;
+}
+.mark img:hover{
+    scale: 1.6;
+    transition: .2s;
+}
+
+
+
+.mark-1 span img{
+    position: absolute;
+    right: 25px;
+
+}
+
+.mark-1 h5 a{
+    position: relative;
+    left: -287px;
+    color: hsl(219, 12%, 42%);
+}
+
+.mark-1 .ago-1{
+    top: 50px;
+    left: 70px;
+}
+
+.mark .monir{
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 0;
+    height: 36px;
+    width: 36px;
+    /* width: 5%;
+    height: 5; */
+}
+
+.mark-1 .slide{
+    padding-left: 12px;
+}
+
+@media(max-width:612px) {
+    .contain{
+        scale: .8;
+        display: flex;
+        text-wrap: nowrap;
+    }
+}
